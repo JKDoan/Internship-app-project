@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/voorbereidingDisturbance"
+        android:icon="@drawable/menu"
+        android:title="@string/voorbereiding" />
+
+    <item
+        android:id="@+id/metingDisturbance"
+        android:icon="@drawable/record"
+        android:title="@string/meting" />
+
+    <item
+        android:id="@+id/resultatenDisturbance"
+        android:icon="@drawable/bargraph"
+        android:title="@string/resultaten" />
+
+</menu>

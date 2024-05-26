@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_bk_insight"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/settings"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/settings"
+                app:srcCompat="@drawable/ic_setting" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/voornaam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:text="Jenny"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/achternaam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:text="Doan"
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/profielfoto"
+                app:srcCompat="@drawable/profile" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:gravity="center"
+                android:text="@string/kies_een_meting"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/buttonSnapshot"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:background="#00FFFFFF"
+                        android:paddingTop="20dp"
+                        app:srcCompat="@drawable/logo_snapshot"
+                        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:text="@string/snapshot"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        tools:ignore="TextContrastCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/buttonGauge"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:background="#00FFFFFF"
+                        android:paddingTop="20dp"
+                        app:srcCompat="@drawable/logo_gauge"
+                        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:text="@string/gauge"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="true"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/buttonTiming"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:background="#00FFFFFF"
+                        android:paddingTop="20dp"
+                        app:srcCompat="@drawable/logo_timing"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:text="@string/timing"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="true"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/buttonDisturbance"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:background="#00FFFFFF"
+                        android:paddingTop="20dp"
+                        app:srcCompat="@drawable/logo_disturbance"
+                        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:text="@string/disturbance"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/buttonPerception"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:background="#00FFFFFF"
+                        android:paddingTop="20dp"
+                        app:srcCompat="@drawable/logo_perception"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:text="@string/perception"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/buttonTimesheets"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:background="#00FFFFFF"
+                        android:paddingTop="20dp"
+                        app:srcCompat="@drawable/logo_timesheets"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:text="@string/timesheets"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/buttonCount"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:background="#00FFFFFF"
+                        android:paddingTop="20dp"
+                        app:srcCompat="@drawable/logo_count"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:text="COUNT"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:background="#00FFFFFF"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

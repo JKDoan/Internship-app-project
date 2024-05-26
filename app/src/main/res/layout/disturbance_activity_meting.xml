@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bk_disturbance"
+    tools:context=".DisturbanceActivityMeting">
+
+    <ImageView
+        android:id="@+id/changeStatusTakenVerstoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:elevation="5dp"
+        android:src="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentMetingDisturbance"
+        android:name="com.example.insight.disturbanceFragmentTaken"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/disturbance_fragment_taken" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/navBarTakenVerstoring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/takenMetingDisturbanceButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="13dp"
+                android:autoSizeMinTextSize="5dp"
+                android:autoSizeTextType="uniform"
+                android:background="#EA6122"
+                android:text="taken"
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/verstoringenMetingDisturbanceButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="13dp"
+                android:autoSizeMinTextSize="5dp"
+                android:autoSizeTextType="uniform"
+                android:background="#C6C6C5"
+                android:text="verstoringen"
+                android:textColor="#D9D9D9"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationViewTaken"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:itemIconSize="40dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/disturbance_bottom_nav_taken">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentInstellingenTaken"
+        android:name="com.example.insight.disturbanceFragmentInstellingTaken"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/disturbance_fragment_instellingen_taken" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentInstellingenVerstoringen"
+        android:name="com.example.insight.disturbanceFragmentInstellingenVerstoringen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:elevation="5dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/fragmentMetingDisturbance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/disturbance_fragment_instellingen_verstoringen"
+        tools:visibility="invisible" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentStopMetingDisturbance"
+        android:name="com.example.insight.disturbanceFragmentStopMeting"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="70dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/disturbance_fragment_stop_meting"
+        tools:visibility="invisible" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentTaakVerstoringBewerken"
+        android:name="com.example.insight.disturbanceFragmentTaakVerstoringBewerken"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/disturbance_fragment_taak_verstoring_bewerken" />
+
+    <RelativeLayout
+        android:id="@+id/structuurBepalenHeader"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@drawable/header_snapshot"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:elevation="2dp"
+            android:gravity="center|fill_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="Structuur bepalen"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/settingsStructuurBepalenTaken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_setting_white_logo_scale"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+        <ImageButton
+            android:id="@+id/settingsStructuurBepalenVerstoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_setting_white_logo_scale"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

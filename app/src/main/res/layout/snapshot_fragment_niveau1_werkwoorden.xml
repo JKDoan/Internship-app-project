@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".snapshotFragmentNiveau1Werkwoorden">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/werkwoordenList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/werkwoorden1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wachten"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/wachten_logo_scale"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/overleggen"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/overleggen_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/overleggen"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/werkwoorden2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bewegen"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/bewegen_logo_scale"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/bewegen"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/zoeken"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/zoeken_logo_scale"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/zoeken"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/werkwoorden3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/transporteren"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/transporteren_logo_scale"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/transporteren"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/lezen"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/lezen_logo_scale"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/lezen"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/werkwoorden4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/produceren"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/productie_logo_scale"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/produceren"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/demonteren"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/demonteren_logo_scale"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/demonteren"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/werkwoorden5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/omstellen"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/omstellen_logo_scale"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/omstellen"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/administreren"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/administreren_logo_scale"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/administreren"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/werkwoorden6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/opruimen"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/opruimen_logo_scale"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/opruimen"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/herstellen"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/herstellen_logo_scale"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/herstellen"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".disturbanceFragmentStructuurBepalenTaken">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:elevation="8dp"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="2dp"
+            android:gravity="center|fill_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="Structuur bepalen"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/backToDisturbanceHomescreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/circle_button_white_grey_border"
+            android:elevation="1dp"
+            android:src="@drawable/left_logo_scale"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/settingsStructuurBepalenTaken"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/ic_setting_white_logo_scale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="734dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"
+                android:background="#8FC8A6"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:autoSizeMinTextSize="16dp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="niveau 1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/taak"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/wachten_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/overleggen_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/overleggen"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/transporteren_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/transporteren"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/productie_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="17dp"
+                    android:text="@string/produceren"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/administreren_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="15dp"
+                    android:text="@string/administreren"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#BCDECA"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:autoSizeMinTextSize="16dp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="niveau 2" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:padding="10dp"
+                    android:text="voorbereiding"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#E9F4ED"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:autoSizeMinTextSize="16dp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="niveau 3" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="template"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".snapshotFragmentWerkwoordVerplaatsen">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_snapshot"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:elevation="2dp"
+            android:gravity="center|fill_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="Werkwoorden"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_setting_white_logo_scale"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="787dp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"
+                android:background="#8FC8A6"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:autoSizeMinTextSize="16dp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="niveau 1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#858584"
+                    android:drawableTop="@drawable/wachten_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bewegenWerkwoord"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/circle_button_werkwoorden"
+                        android:backgroundTint="#bcdfcb"
+                        android:drawableTop="@drawable/bewegen_logo_scale"
+                        android:outlineAmbientShadowColor="#00FFFFFF"
+                        android:outlineSpotShadowColor="#00FFFFFF"
+                        android:paddingBottom="25dp"
+                        android:text="@string/bewegen"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="TextContrastCheck" />
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="65dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="#00FFFFFF"
+                        android:elevation="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/add" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/circle_button_werkwoorden"
+                        android:backgroundTint="#bcdfcb"
+                        android:drawableTop="@drawable/wachten_logo_scale"
+                        android:outlineAmbientShadowColor="#00FFFFFF"
+                        android:outlineSpotShadowColor="#00FFFFFF"
+                        android:paddingBottom="25dp"
+                        android:text="@string/wachten"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="TextContrastCheck" />
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="65dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="#00FFFFFF"
+                        android:elevation="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/add" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/circle_button_werkwoorden"
+                        android:backgroundTint="#bcdfcb"
+                        android:drawableTop="@drawable/wachten_logo_scale"
+                        android:outlineAmbientShadowColor="#00FFFFFF"
+                        android:outlineSpotShadowColor="#00FFFFFF"
+                        android:paddingBottom="25dp"
+                        android:text="@string/wachten"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="TextContrastCheck" />
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="65dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="#00FFFFFF"
+                        android:elevation="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/add" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/circle_button_werkwoorden"
+                        android:backgroundTint="#bcdfcb"
+                        android:drawableTop="@drawable/wachten_logo_scale"
+                        android:outlineAmbientShadowColor="#00FFFFFF"
+                        android:outlineSpotShadowColor="#00FFFFFF"
+                        android:paddingBottom="25dp"
+                        android:text="@string/wachten"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="TextContrastCheck" />
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="65dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="#00FFFFFF"
+                        android:elevation="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/add" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#BCDECA"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:autoSizeMinTextSize="16dp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="niveau 2" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#b0b0b0"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#E9F4ED"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:autoSizeMinTextSize="16dp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="niveau 3" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wachten2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#b0b0b0"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

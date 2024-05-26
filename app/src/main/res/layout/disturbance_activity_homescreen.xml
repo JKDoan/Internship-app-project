@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutdisturbance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bk_disturbance"
+    tools:context=".DisturbanceActivityHomescreen">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/backToHomescreenButton"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/disturbance_logo" />
+
+    <ImageButton
+        android:id="@+id/backToHomescreenButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/settings"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/disturbanceSelecteerTemplate"
+        app:srcCompat="@drawable/profile"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerViewDisturbance"
+        android:name="com.example.insight.disturbanceFragmentMetingInstellen"
+        android:layout_width="410dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/disturbance_fragment_meting_instellen" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="324dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationViewDisturb"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|center_horizontal|end"
+            app:itemIconSize="40dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/disturbance_bottom_nav_homescreen" />
+
+    </FrameLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/disturbanceSelecteerTemplate"
+        android:name="com.example.insight.disturbanceFragmentTemplateSelecteren"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/disturbance_fragment_template_selecteren"
+        tools:visibility="invisible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A000000"
+    tools:context=".disturbanceFragmentStopMeting">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="297dp"
+        android:layout_height="133dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_rectangle_results"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:autoSizeMinTextSize="20dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:text="pauze modus"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="bottom|end"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="184dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:autoSizeTextType="uniform"
+                android:text="hervatten"
+                android:textAlignment="textEnd"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="184dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:autoSizeTextType="uniform"
+                android:text="definitief stoppen"
+                android:textAlignment="textEnd"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="51dp"
+            android:layout_height="217dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="44dp"
+            android:background="@drawable/rounded_rectangle_stop_meting"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/hervattenButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@drawable/circle_button_werkwoorden"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/start_orange_logo_scale"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/definitiefStoppenButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_button_werkwoorden"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/stop_orange_logo_scale" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

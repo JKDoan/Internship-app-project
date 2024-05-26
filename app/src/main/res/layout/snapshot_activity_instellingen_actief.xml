@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnapshotActivityInstellingenActief">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_snapshot"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:elevation="2dp"
+            android:gravity="center|fill_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="Werkwoorden"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="2.7"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/backToTemplateAanmaken"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/circle_button_white_grey_border"
+            android:elevation="1dp"
+            android:src="@drawable/left_logo_scale"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.7"
+                    android:background="#8FC8A6"
+                    android:orientation="vertical"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoSizeMinTextSize="16dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:gravity="center_horizontal"
+                        android:text="actief" />
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/wachtenWerkwoordActive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/wachten_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/wachten"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/bewegenWerkwoordActive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/bewegen_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/bewegen"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/transporterenWerkwoordActive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/transporteren_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/transporteren"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/overleggenWerkwoordActive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/overleggen_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/overleggen"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/lezenWerkwoordActive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/lezen_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:text="@string/lezen"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/zoekenWerkwoordActive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/zoeken_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="zoeken"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.7"
+                    android:background="#BCDECA"
+                    android:orientation="vertical"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoSizeMinTextSize="16dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:gravity="center_horizontal"
+                        android:text="inactief" />
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/wachtenWerkwoordInactive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_light_green_werkwoorden"
+                            android:drawableTop="@drawable/wachten_black_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/wachten"
+                            android:textColor="#FFFFFF"
+                            android:visibility="invisible"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/bewegenWerkwoordInactive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_light_green_werkwoorden"
+                            android:drawableTop="@drawable/bewegen_black_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/bewegen"
+                            android:textColor="#FFFFFF"
+                            android:visibility="invisible"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/transporterenWerkwoordInactive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_light_green_werkwoorden"
+                            android:drawableTop="@drawable/transporteren_black_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/transporteren"
+                            android:textColor="#FFFFFF"
+                            android:visibility="invisible"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/overleggenWerkwoordInactive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_light_green_werkwoorden"
+                            android:drawableTop="@drawable/overleggen_black_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/overleggen"
+                            android:textColor="#FFFFFF"
+                            android:visibility="invisible"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/lezenWerkwoordInactive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_light_green_werkwoorden"
+                            android:drawableTop="@drawable/lezen_black_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:text="@string/lezen"
+                            android:textColor="#FFFFFF"
+                            android:visibility="invisible"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/zoekenWerkwoordInactive"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_light_green_werkwoorden"
+                            android:drawableTop="@drawable/zoeken_black_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="zoeken"
+                            android:textColor="#FFFFFF"
+                            android:visibility="invisible"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:clipToPadding="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/switchWachten"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="57dp"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/leftright" />
+
+                <ImageButton
+                    android:id="@+id/switchBewegen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="57dp"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/leftright" />
+
+                <ImageButton
+                    android:id="@+id/switchTransporteren"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="57dp"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/leftright" />
+
+                <ImageButton
+                    android:id="@+id/switchOverleggen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="57dp"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/leftright" />
+
+                <ImageButton
+                    android:id="@+id/switchLezen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="57dp"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/leftright" />
+
+                <ImageButton
+                    android:id="@+id/switchZoeken"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="57dp"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/leftright" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

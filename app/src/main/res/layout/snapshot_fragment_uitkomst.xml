@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnapshotActivityMetingResultaat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".snapshotFragmentUitkomst">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_snapshot"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:elevation="2dp"
+                    android:gravity="center|fill_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:text="Uitkomst"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/WerkwoordUitkomst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/ic_setting_white_logo_scale"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/ResultsMeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="70dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="420dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#D9D9D9"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeMinTextSize="16dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_condensed_regular"
+                            android:text="overzicht niveau 1 werkwoorden" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:layout_weight="1"
+                                android:background="#D20A11"
+                                android:fontFamily="@font/roboto_condensed_regular"
+                                android:gravity="center"
+                                android:text="Bewegen"
+                                android:textColor="#FFFFFF" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+                                    android:background="#9C9B9B"
+                                    android:gravity="center"
+                                    android:text="Zoeken"
+                                    android:textColor="#FFFFFF" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+                                    android:background="#20914E"
+                                    android:gravity="center"
+                                    android:text="Wachten"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#D9D9D9"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeMinTextSize="16dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_condensed_regular"
+                            android:text="overzicht werkwoorden" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:autoSizeMinTextSize="16dp"
+                                android:autoSizeTextType="uniform"
+                                android:fontFamily="@font/roboto_condensed_regular"
+                                android:text="zichtbaar t/m niveau" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:background="@drawable/circle_button_grey"
+                                    android:fontFamily="@font/roboto_condensed_regular"
+                                    android:stateListAnimator="@null"
+                                    android:text="1"
+                                    android:textColor="#FFFFFF" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:background="@drawable/circle_button_grey"
+                                    android:fontFamily="@font/roboto_condensed_regular"
+                                    android:stateListAnimator="@null"
+                                    android:text="2"
+                                    android:textColor="#FFFFFF" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:background="@drawable/circle_button_grey"
+                                    android:fontFamily="@font/roboto_condensed_regular"
+                                    android:stateListAnimator="@null"
+                                    android:text="3"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="370dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#D9D9D9"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_condensed_regular"
+                            android:text="verhouding rood/groen" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="REPLACEMENT"
+                            android:padding="10dp"
+                            android:src="@drawable/greenred" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/shareBar"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/vak_template"
+            android:backgroundTint="#D9D9D9"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/printscreen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="schermfoto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/upload" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="delen" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

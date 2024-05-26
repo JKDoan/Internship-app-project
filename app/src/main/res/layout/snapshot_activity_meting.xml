@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk_insight_light"
+    tools:context=".SnapshotActivityHomescreen">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerMetingSnapshot"
+        android:name="com.example.insight.snapshotFragmentMeting"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493"
+        tools:layout="@layout/snapshot_fragment_meting" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentStopMeting"
+        android:name="com.example.insight.StopMetingFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/snapshot_fragment_stop_meting"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="411dp"
+        android:layout_height="86dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|center_horizontal|end"
+            app:itemIconSize="40dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/snapshot_bottom_nav_meten" />
+
+    </FrameLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/werkwoordBewerkenFragment"
+        android:name="com.example.insight.snapshotFragmentWerkwoordBewerken"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/snapshot_fragment_werkwoord_bewerken"
+        tools:visibility="invisible" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/werkwoordInstellingenFragment"
+        android:name="com.example.insight.snapshotFragmentWerkwoordSchermBewerkenMeting"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="69dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/fragmentContainerMetingSnapshot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/snapshot_fragment_werkwoord_scherm_bewerken_meting"
+        tools:visibility="invisible" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/werkwoordBewerkenUitkomstFragment"
+        android:name="com.example.insight.snapshotFragmentWerkwoordBewerkenUitkomst"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fragmentContainerMetingSnapshot"
+        app:layout_constraintStart_toStartOf="@+id/fragmentContainerMetingSnapshot"
+        app:layout_constraintTop_toTopOf="@+id/fragmentContainerMetingSnapshot"
+        tools:layout="@layout/snapshot_fragment_werkwoord_bewerken_uitkomst"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

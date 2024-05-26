@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".disturbanceFragmentInstellingenActief">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_snapshot"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:elevation="2dp"
+            android:gravity="center|fill_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="Structuur bepalen"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="2.7"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/backToStructuurBepalen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/circle_button_white_grey_border"
+            android:elevation="1dp"
+            android:src="@drawable/left_logo_scale"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/group_3362"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeMinTextSize="16dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:gravity="center_horizontal"
+                android:text="actief" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeMinTextSize="16dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:gravity="center_horizontal"
+                android:text="inactief" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:orientation="horizontal"
+                        tools:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/wachten_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/wachten"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginVertical="57dp"
+                            android:layout_weight="1"
+                            android:background="#00FFFFFF"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/leftright" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:backgroundTint="#8FC8A6"
+                            android:drawableTop="@drawable/bewegen_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/bewegen"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:orientation="horizontal"
+                        tools:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/wachten_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/wachten"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginVertical="57dp"
+                            android:layout_weight="1"
+                            android:background="#00FFFFFF"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/leftright" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:backgroundTint="#8FC8A6"
+                            android:drawableTop="@drawable/bewegen_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/bewegen"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:orientation="horizontal"
+                        tools:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/wachten_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/wachten"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginVertical="57dp"
+                            android:layout_weight="1"
+                            android:background="#00FFFFFF"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/leftright" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/appCompatButton"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:backgroundTint="#8FC8A6"
+                            android:drawableTop="@drawable/bewegen_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/bewegen"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:orientation="horizontal"
+                        tools:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/wachten_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/wachten"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginVertical="57dp"
+                            android:layout_weight="1"
+                            android:background="#00FFFFFF"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/leftright" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:backgroundTint="#8FC8A6"
+                            android:drawableTop="@drawable/bewegen_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/bewegen"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:orientation="horizontal"
+                        tools:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/wachten_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/wachten"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginVertical="57dp"
+                            android:layout_weight="1"
+                            android:background="#00FFFFFF"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/leftright" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:backgroundTint="#8FC8A6"
+                            android:drawableTop="@drawable/bewegen_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/bewegen"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:orientation="horizontal"
+                        tools:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:drawableTop="@drawable/wachten_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/wachten"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginVertical="57dp"
+                            android:layout_weight="1"
+                            android:background="#00FFFFFF"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/leftright" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/circle_button_werkwoorden"
+                            android:backgroundTint="#8FC8A6"
+                            android:drawableTop="@drawable/bewegen_logo_scale"
+                            android:gravity="center_horizontal"
+                            android:outlineAmbientShadowColor="#00FFFFFF"
+                            android:outlineSpotShadowColor="#00FFFFFF"
+                            android:paddingBottom="25dp"
+                            android:text="@string/bewegen"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bk_snapshot"
+    tools:context=".SnapshotActivityHomescreen">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/backToHomescreenButton"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/snapshot_logo" />
+
+    <ImageButton
+        android:id="@+id/backToHomescreenButton"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/settings"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerViewSnapshot"
+        android:name="com.example.insight.snapshotFragmentMetingInstellen"
+        android:layout_width="410dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/snapshot_fragment_meting_instellen"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="324dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|center_horizontal|end"
+            app:itemIconSize="40dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/snapshot_bottom_nav_homescreen" />
+
+    </FrameLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/slideInTemplate"
+        android:name="com.example.insight.snapshotFragmentTemplateSelecteren"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="9dp"
+        android:translationZ="9dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/snapshot_fragment_template_selecteren"
+        tools:visibility="invisible" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/slideInOmgeving"
+        android:name="com.example.insight.fragmentOmgevingSelecteren"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="9dp"
+        android:translationZ="9dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_omgeving_selecteren"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

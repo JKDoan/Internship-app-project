@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".snapshotFragmentTijdlijn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/header_snapshot"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto"
+                android:text="Tijdlijn"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="50dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="200dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:background="#FFFFFF"
+                                android:fontFamily="@font/roboto_condensed_regular"
+                                android:gravity="center"
+                                android:text="14:23"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/dashed_line" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal|top"
+                                android:layout_marginHorizontal="15dp"
+                                android:fontFamily="@font/roboto_condensed_regular"
+                                android:gravity="center"
+                                android:text="Vanaf begin activiteit"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/dashed_line" />
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:background="#FFFFFF"
+                                android:fontFamily="@font/roboto_condensed_regular"
+                                android:gravity="center"
+                                android:text="14:23"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/dashed_line" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="73dp"
+                                android:layout_height="39dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/connect_line" />
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/circle_button_grey"
+                                android:drawableTop="@drawable/bewegen_logo_smaller_scale"
+                                android:text="bewegen"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/dashed_line" />
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:background="#FFFFFF"
+                                android:fontFamily="@font/roboto_condensed_regular"
+                                android:gravity="center"
+                                android:text="14:23"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/dashed_line" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="73dp"
+                                android:layout_height="39dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/connect_line" />
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/circle_button_grey"
+                                android:drawableTop="@drawable/bewegen_logo_smaller_scale"
+                                android:text="bewegen"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/dashed_line" />
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:background="#FFFFFF"
+                                android:fontFamily="@font/roboto_condensed_regular"
+                                android:gravity="center"
+                                android:text="14:23"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/dashed_line" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="73dp"
+                                android:layout_height="39dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/connect_line" />
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/circle_button_grey"
+                                android:drawableTop="@drawable/bewegen_logo_smaller_scale"
+                                android:text="bewegen"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/dashed_line" />
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:background="#FFFFFF"
+                                android:fontFamily="@font/roboto_condensed_regular"
+                                android:gravity="center"
+                                android:text="14:23"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/dashed_line" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="73dp"
+                                android:layout_height="39dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/connect_line" />
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/circle_button_grey"
+                                android:drawableTop="@drawable/bewegen_logo_smaller_scale"
+                                android:text="bewegen"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/dashed_line" />
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:background="#FFFFFF"
+                                android:fontFamily="@font/roboto_condensed_regular"
+                                android:gravity="center"
+                                android:text="14:23"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="bottom|center_horizontal"
+                                android:layout_marginHorizontal="15dp"
+                                android:fontFamily="@font/roboto_condensed_regular"
+                                android:gravity="center"
+                                android:text="Vanaf begin activiteit"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

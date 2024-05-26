@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bk_disturbance_verstoringen"
+    tools:context=".disturbanceFragmentVerstoringen">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbarTaken"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:elevation="2dp"
+            android:gravity="center_horizontal">
+
+
+            <ImageButton
+                android:id="@+id/addCommentDisturbance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/comment_no_border"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/roboto"
+                    android:text="Verstoring"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/verstoring"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/vak_template"
+                android:backgroundTint="#E16959"
+                android:minHeight="40dp">
+
+                <LinearLayout
+                    android:id="@+id/progression"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#D9442F"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/naamMeting"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_condensed_regular"
+                        android:gravity="center_vertical"
+                        android:text="verstoring 1"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="TextContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:autoSizeMaxTextSize="20dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_condensed_regular"
+                            android:gravity="center"
+                            android:text="1 st"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="TextContrastCheck" />
+
+                        <ImageView
+                            android:id="@+id/countVerstoring"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/check" />
+
+                        <TextView
+                            android:id="@+id/count"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:autoSizeMaxTextSize="20dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_condensed_regular"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:text="0"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/verstoringToevoegen"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/vak_template"
+                android:backgroundTint="#D9442F"
+                android:minHeight="40dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/nieuwTemplate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:gravity="center_vertical"
+                    android:text="verstoringen toevoegen"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/add" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

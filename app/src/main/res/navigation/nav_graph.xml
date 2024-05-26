@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.insight.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/snapshotHomescreen"
+        android:name="com.example.insight.SnapshotActivityHomescreen"
+        android:label="activity_snapshot_homescreen"
+        tools:layout="@layout/snapshot_activity_homescreen" />
+    <fragment
+        android:id="@+id/snapshotFragment"
+        android:name="com.example.insight.snapshotFragment"
+        android:label="fragment_snapshot"
+        tools:layout="@layout/snapshot_fragment_meting_instellen" >
+        <action
+            android:id="@+id/action_snapshotFragment_to_snapshotHomescreen"
+            app:destination="@id/snapshotHomescreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/voorbereidingFragment"
+        android:name="com.example.insight.voorbereidingFragment"
+        android:label="voorbereidingFragment" >
+        <action
+            android:id="@+id/action_voorbereidingFragment_to_snapshotHomescreen"
+            app:destination="@id/snapshotHomescreen" />
+    </fragment>
+</navigation>

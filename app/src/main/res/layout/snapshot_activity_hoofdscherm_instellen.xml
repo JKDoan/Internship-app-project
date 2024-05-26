@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnapshotActivityHoofdschermInstellen">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_snapshot"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:elevation="2dp"
+            android:gravity="center|fill_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="Werkwoorden"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="2.7"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/backToTemplateAanmaken"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/circle_button_white_grey_border"
+            android:elevation="1dp"
+            android:src="@drawable/left_logo_scale"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"
+                android:background="#8FC8A6"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoSizeMinTextSize="16dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:text="niveau 1" />
+
+                    <RadioButton
+                        android:id="@+id/niveau1RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:buttonTint="#E95E20" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/wachten_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wachten7"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/bewegen_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/bewegen"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wachten8"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/wachten_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wachten9"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/wachten_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:drawableTop="@drawable/wachten_logo_scale"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingBottom="25dp"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#BCDECA"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoSizeMinTextSize="16dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:text="niveau 2" />
+
+                    <RadioButton
+                        android:id="@+id/niveau2RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:buttonTint="#E95E20" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#8FC8A6"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#E9F4ED"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoSizeMinTextSize="16dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:text="niveau 3" />
+
+                    <RadioButton
+                        android:id="@+id/niveau3RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:buttonTint="#E95E20"
+                        android:enabled="true" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wachten2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#BCDECA"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

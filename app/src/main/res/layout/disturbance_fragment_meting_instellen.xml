@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".disturbanceFragmentMetingInstellen">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/metingInstellen"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/roboto"
+            android:text="@string/meting_instellen"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="373dp"
+        android:layout_height="421dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/vak_template"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/naamMeting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="18dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:gravity="center_vertical"
+                android:text="@string/naam_meting"
+                android:textColor="#868686"
+                tools:ignore="TextContrastCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="#C6C6C5"
+                app:boxStrokeColor="#00FFFFFF"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="#C6C6C5"
+                app:hintTextColor="#C6C6C5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="18dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:gravity="end"
+                    android:hint="@string/vul_in"
+                    android:textColor="#000000"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/vak_template"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/templateTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="18dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:gravity="center_vertical"
+                android:text="@string/projectnaam"
+                android:textColor="#868686"
+                tools:ignore="TextContrastCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColorHint="#C6C6C5"
+                app:boxStrokeColor="#00FFFFFF"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="#C6C6C5"
+                app:hintTextColor="#C6C6C5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="18dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:gravity="end"
+                    android:hint="@string/optioneel"
+                    android:textColor="#000000"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/templateSelecteren"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/vak_template"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/template"
+                android:layout_width="262dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="18dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:gravity="center_vertical"
+                android:text="@string/template"
+                android:textColor="#868686"
+                tools:ignore="TextContrastCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:gravity="center_vertical"
+                    android:text="Losse Meting"
+                    android:textColor="#000000"
+                    tools:ignore="TextContrastCheck" />
+
+                <ImageButton
+                    android:id="@+id/templateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_margin="10dp"
+                    android:background="#00FFFFFF"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/right_logo_scale" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="413dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/startMetingDisturbance"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:backgroundTint="#EA6122"
+            android:drawableTop="@drawable/start_logo_scale"
+            android:gravity="bottom|center_horizontal"
+            app:cornerRadius="50dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

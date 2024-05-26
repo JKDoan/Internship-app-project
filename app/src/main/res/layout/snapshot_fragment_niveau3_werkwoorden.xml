@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".snapshotFragmentNiveau3Werkwoorden">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="708dp"
+        android:background="#E9F4ED"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/werkwoordenList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/werkwoorden1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wachten"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#BCDECA"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingHorizontal="40dp"
+                    android:text="wachten 3a"
+                    android:textColor="#575756"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#BCDECA"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingHorizontal="40dp"
+                    android:text="wachten 3b"
+                    android:textColor="#575756"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/werkwoorden2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#BCDECA"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingHorizontal="40dp"
+                    android:text="wachten 3c"
+                    android:textColor="#575756"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#BCDECA"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingHorizontal="40dp"
+                    android:text="wachten 3d"
+                    android:textAlignment="center"
+                    android:textColor="#575756"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/werkwoorden3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#BCDECA"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:paddingHorizontal="40dp"
+                    android:text="wachten 3e"
+                    android:textColor="#575756"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#BCDECA"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="@string/lezen"
+                    android:textColor="#575756"
+                    android:visibility="invisible"
+                    tools:ignore="TextContrastCheck"
+                    tools:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

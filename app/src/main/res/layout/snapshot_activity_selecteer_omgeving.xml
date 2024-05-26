@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bk_snapshot"
+    tools:context=".SnapshotActivitySelecteerOmgeving">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_snapshot"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/backToSnapshotTemplateAanmaken"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_button_werkwoorden"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/left"
+            tools:ignore="ImageContrastCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:autoSizeMaxTextSize="26dp"
+        android:autoSizeMinTextSize="17dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/roboto"
+        android:text="Template aanmaken"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout5"
+        tools:ignore="TextContrastCheck"
+        tools:layout_marginHorizontal="30dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="210dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginVertical="10dp"
+            android:autoSizeMinTextSize="18dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_horizontal"
+            android:text="Selecteer omgeving" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/legoTemplateButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:autoSizeMaxTextSize="17dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/vak_template"
+            android:drawableRight="@drawable/lego"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:padding="15dp"
+            android:stateListAnimator="@null"
+            android:text="lego"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#868686"
+            tools:cornerRadius="5dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/infraTemplateButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:autoSizeMaxTextSize="17dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/vak_template"
+            android:drawableRight="@drawable/build"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:padding="15dp"
+            android:stateListAnimator="@null"
+            android:text="infra/bouw"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#868686"
+            tools:cornerRadius="5dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/productieTemplateButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:autoSizeMaxTextSize="17dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/vak_template"
+            android:drawableRight="@drawable/production"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:padding="15dp"
+            android:stateListAnimator="@null"
+            android:text="productie"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#868686"
+            tools:cornerRadius="5dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/zorgTemplateButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:autoSizeMaxTextSize="17dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/vak_template"
+            android:drawableRight="@drawable/health"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:minHeight="0dp"
+            android:padding="15dp"
+            android:stateListAnimator="@null"
+            android:text="zorg"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#868686"
+            tools:cornerRadius="5dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/engineeringTemplateButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:autoSizeMaxTextSize="17dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/vak_template"
+            android:drawableRight="@drawable/engineering"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:padding="15dp"
+            android:stateListAnimator="@null"
+            android:text="engineering"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#868686"
+            tools:cornerRadius="5dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kantoorTemplateButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:autoSizeMaxTextSize="17dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/vak_template"
+            android:drawableRight="@drawable/office"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:padding="15dp"
+            android:stateListAnimator="@null"
+            android:text="kantoor"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#868686"
+            tools:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

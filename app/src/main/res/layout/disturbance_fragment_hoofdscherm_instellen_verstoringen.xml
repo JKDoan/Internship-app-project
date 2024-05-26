@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".disturbanceFragmentHoofdschermInstellenVerstoringen" >
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"
+                android:background="#E16959"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoSizeMinTextSize="16dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:text="niveau 1" />
+
+                    <RadioButton
+                        android:id="@+id/niveau1RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:buttonTint="#E95E20" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#D9442F"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="verstoring A"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#D9442F"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="verstoring B"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#D9442F"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="verstoring C"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#D9442F"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="verstoring D"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#D9442F"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="verstoring D"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#D9442F"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="verstoring D"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#E88F82"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoSizeMinTextSize="16dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:text="niveau 2" />
+
+                    <RadioButton
+                        android:id="@+id/niveau2RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:buttonTint="#E95E20" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#E16959"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#F0B4AC"
+                android:orientation="vertical"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:autoSizeMinTextSize="16dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:text="niveau 3" />
+
+                    <RadioButton
+                        android:id="@+id/niveau3RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:buttonTint="#E95E20" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wachten2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_button_werkwoorden"
+                    android:backgroundTint="#E88F82"
+                    android:outlineAmbientShadowColor="#00FFFFFF"
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    android:text="@string/wachten"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

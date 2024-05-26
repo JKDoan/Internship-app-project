@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bk_snapshot"
+    tools:context=".SnapshotActivityMetingResultaat">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/circle_button_werkwoorden"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerResultsSnapshot"
+        android:name="com.example.insight.snapshotFragmentUitkomst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/snapshot_fragment_uitkomst" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavResultsSnapshot"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:itemIconSize="40dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/snapshot_bottom_nav_uitkomst" />
+</androidx.constraintlayout.widget.ConstraintLayout>
